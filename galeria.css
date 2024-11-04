@@ -1,0 +1,189 @@
+nav {
+    background-color: rgb(0, 0, 0); /* Cor do fundo do menu */
+    padding: 25px 0; /* Espaçamento interno */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre logo e links */
+    margin: 0;
+}
+
+.nav-logo {
+    margin-left: 20px; /* Espaço à esquerda da logo */
+    margin-right: 60px; /* Aumenta o espaço à direita da logo */
+}
+
+.nav-logo img { 
+    width: 110px; /* Tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 30px; /* Ajusta o espaço entre os links, se necessário */
+}
+
+
+nav ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Atualizando a fonte */
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(216, 175, 98);
+    text-decoration: none;
+    font-size: 19px; /* Tamanho da fonte */
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+
+
+nav ul li a:hover {
+    color: brown;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none;     /* Esconde o submenu inicialmente */
+    position: absolute;     /* Posiciona o submenu em relação ao item pai */
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;     /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.img1 {
+    width: 90px;
+    height: 90px;
+}
+
+section {
+    padding: 40px 20px;
+    margin-top: 60px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+h2 {
+    font-size: 24px; /* Tamanho do h2 igual ao h1 */
+    color: #ffffff; /* Cor igual ao h1 */
+    margin-bottom: 20px; /* Espaçamento abaixo do h2 */
+}
+
+p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Estilo da galeria */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta três itens por linha */
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove o espaço abaixo da imagem */
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+footer {
+    background-color: #252121;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que as seções se movam para baixo se não houver espaço */
+}
+
+.footer-section {
+    width: 20%; /* Ajuste conforme necessário */
+    margin: 10px;
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ff9900; /* Cor ao passar o mouse */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+

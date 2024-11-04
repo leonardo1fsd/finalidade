@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="detalhesp.css">
+    <script src="detalhesp.js" defer></script> <!-- Link para o arquivo JS -->
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img class="img1" src="img/original.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="final.html">INICIO</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="central.html">CAMISAS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="cadastro.html">CADASTRE-SE</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="produto">
+            <div class="imagens-produto">
+                <img src="img/retro barca.webp" alt="Produto principal" class="imagem-principal" id="imagem-principal">
+                <div class="miniaturas">
+                    <img src="img/deta.webp" alt="Miniatura 1" class="miniatura">
+                    <img src="img/detalhe.webp" alt="Miniatura 2" class="miniatura">
+                    <img src="img/detalhesbarca.webp" alt="Miniatura 3" class="miniatura">
+                </div>
+            </div>
+            <div class="detalhes-produto">
+                <h2>Camisa retrô do Barcelona</h2>
+                <p class="descricao">Reviva a história do FC Barcelona com nossa Camisa Retrô!</p>
+                <p class="preco">R$ 149,99</p>
+                <form class="opcoes-compra">
+                    <label for="tamanho">Tamanho:</label>
+                    <select id="tamanho">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                    </select>
+                    <div class="personalizacao">
+                        <label for="personalizar">Deseja personalizar?</label>
+                        <select id="personalizar" onchange="mostrarPersonalizacao(this.value)">
+                            <option value="nao">Não</option>
+                            <option value="sim">Sim</option>
+                        </select>
+                        <div id="personalizacao-opcoes" style="display: none;">
+                            <p>Escreva seu nome:</p>
+                            <input type="text" id="nome-personalizado" placeholder="Seu nome">
+                            <p>Escreva o número:</p>
+                            <input type="text" id="numero-personalizado" placeholder="Seu número">
+                        </div>
+                    </div>
+                    <button type="submit">Comprar</button>
+                </form>
+            </div>
+        </section>
+        <br><br>
+        <div class="comentario">
+            <img src="img/MESSI.jpg" alt="foto de maria" class="foto-usuario">
+            <p><strong>Messi:</strong> ótimo produto, recomendo!</p>
+        </div>
+        <div class="comentario">
+            <img src="img/CRIS.webp" alt="foto de joao" class="foto-usuario">
+            <p><strong>CR7:</strong> paia!</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Contato</h2>
+                <p><strong>Telefone:</strong> (11) 12345-6789</p>
+                <p><strong>Email:</strong> contato@gmail.com.br</p>
+                <p><strong>Endereço:</strong> Av. Principal, 456 - São Paulo, SP</p>
+            </div>
+            <div class="footer-section">
+                <h2>Redes Sociais</h2>
+                <p>Facebook: leleolindao</p>
+                <p>Instagram: leleolindao</p>
+                <p>Twitter: leleolindao</p>
+                <p>LinkedIn: leleolindao</p>
+            </div>
+            <div class="footer-section">
+                <h2>Sobre Nós</h2>
+                <p>Somos um clube de futebol apaixonado, oferecendo as melhores camisas e produtos para os fãs.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Soccer Club. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

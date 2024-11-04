@@ -1,0 +1,280 @@
+nav {
+    background-color: rgb(0, 0, 0); /* Cor do fundo do menu */
+    padding: 25px 0; /* Espaçamento interno */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre logo e links */
+    margin: 0;
+}
+
+.nav-logo {
+    margin-left: 20px; /* Espaço à esquerda da logo */
+    margin-right: 60px; /* Aumenta o espaço à direita da logo */
+}
+
+.nav-logo img { 
+    width: 110px; /* Tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 30px; /* Ajusta o espaço entre os links, se necessário */
+}
+
+
+nav ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Atualizando a fonte */
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: rgb(216, 175, 98);
+    text-decoration: none;
+    font-size: 19px; /* Tamanho da fonte */
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+
+
+nav ul li a:hover {
+    color: brown;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none;     /* Esconde o submenu inicialmente */
+    position: absolute;     /* Posiciona o submenu em relação ao item pai */
+    background-color: #443737;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;     /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilização do container do slider */
+.slider {
+    width: 90%; /* O slide ocupa 100% da largura disponível */
+    max-width: 1000px; /* Limite de largura para o slider */ 
+    height: 500px;
+    margin: 0 auto; /* Centraliza o slider horizontalmente */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites do container */
+    position: relative; /* Posiciona o slider de forma relativa para posicionar elementos dentro dele, se necessário */
+}
+
+/* Estilização do container das slides */
+.slides {
+    display: flex; 
+    width: 200%; 
+    animation: slideAnimation 50s infinite; 
+}
+
+.slide {
+    width: 90%; 
+    flex-shrink: 0; 
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); } 
+    55% { transform: translateX(-100%); } 
+    55% { transform: translateX(-200%); } 
+    100% { transform: translateX(0); } 
+}
+
+/* Estilização das imagens dentro dos slides */ 
+.slide img {
+    width: 80%; /* A imagem ocupa 100% da largura do slide */
+    display: block;
+    height: 500px;
+}
+
+
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.categoria {
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo */
+    margin-top: 20px; /* Margem superior para afastar do topo da página */
+}
+
+.texto-container {
+    background-color: #ffffff; /* Cor de fundo para destacar o texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+    margin-bottom: 20px; /* Espaçamento abaixo do contêiner */
+}
+
+.texto {
+    font-size: 24px; /* Aumenta o tamanho do texto */
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+.imagem {
+    width: 200px; /* Ajusta a largura da imagem */
+    height: 120px; /* Define uma altura fixa para manter as imagens uniformes */
+    margin: 30px; /* Espaçamento entre as imagens */
+    border-radius: 20%; /* Bordas redondas */
+    border: 5px solid #aea3a3; /* Adiciona uma borda */
+    object-fit: cover; /* Cobre o espaço sem distorcer a imagem */
+    transition: transform 0.3s; /* Animação suave ao passar o mouse */
+}
+
+.imagem:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #000000;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.card p {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.card a {
+    color: inherit; /* Faz o link herdar a cor do texto do elemento pai */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.linha {
+    border: none;
+    height: 10px; /* Define a altura da linha */
+    background-color: #ffffff; /* Define a cor da linha */
+    width: 100%; /* Define a largura da linha */
+    margin: 20px auto; /* Centraliza a linha e adiciona margens superior e inferior */
+}
+
+
+.title-container {
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+
+.informacao {
+    font-family: 'Arial', sans-serif; 
+    font-size: 24px;
+    font-weight: bold; 
+    color: #333; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 20px 40px;
+    margin: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: inline-block; 
+}
+
+.preco {
+    font-weight: bold; /* Torna o texto em negrito */
+    font-size: 20px; /* Ajuste o tamanho da fonte se necessário */
+    color: #000000; /* Cor do preço */
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+section {
+    padding: 40px 20px;
+    margin-top: 60px;
+    background-color: #ececec;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+    font-family: sans-serif;
+}
+
+
+footer {
+    background-color: #252121;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Permite que as seções se movam para baixo se não houver espaço */
+}
+
+.footer-section {
+    width: 20%; /* Ajuste conforme necessário */
+   
+}
+
+.footer-section h2 {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+
+

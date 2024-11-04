@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img class="img1" src="img/original.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="final.html">INICIO</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="central.html">CAMISAS</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="cadastro.html">CADASTRE-SE</a></li>
+            <li><a href="carrinho.html">CARRINHO</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <h2>Cadastro</h2>
+        <form action="register-process.php" method="post">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <br><br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="cabecalho">Contato</h2>
+                <p><strong>Telefone:</strong> (11) 12345-6789</p>
+                <p><strong>Email:</strong> contato@gmail.com.br</p>
+                <p><strong>Endereço:</strong> Av. Principal, 456 - São Paulo, SP</p>
+            </div>
+          
+            <div class="footer-section">
+                <h2 class="cabecalho">Redes Sociais</h2>
+                <ul>
+                    <p>Facebook: leleolindao</p>
+                    <p>Instagram: leleolindao</p>
+                    <p>Twitter: leleolindao</p>
+                    <p>LinkedIn: leleolindao</p>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2 class="cabecalho">Sobre Nós</h2>
+                <p>Somos um clube de futebol apaixonado, oferecendo as melhores camisas e produtos para os fãs.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Soccer Club. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
